@@ -1,0 +1,45 @@
+{
+    "name": "apiauto/apiauto",
+    "description": "PHP client for the apiauto.space REST API: used-car listings from Encar (Korea), Che168 (China), Copart and IAAI (USA) in one JSON format. Not affiliated with those sources",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["encar", "encar-api", "che168", "che168-api", "copart", "copart-api", "iaai", "iaai-api", "used-cars", "car-auction", "vehicle-data", "api-client", "sdk"],
+    "homepage": "https://apiauto.space/en/docs/",
+    "support": {
+        "issues": "https://github.com/apiauto-space/apiauto-php/issues",
+        "source": "https://github.com/apiauto-space/apiauto-php",
+        "docs": "https://apiauto.space/en/docs/"
+    },
+    "authors": [
+        {
+            "name": "apiauto.space",
+            "homepage": "https://apiauto.space/en/"
+        }
+    ],
+    "require": {
+        "php": ">=8.2",
+        "ext-curl": "*",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^2.0",
+        "phpunit/phpunit": "^10.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Apiauto\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Apiauto\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "stan": "phpstan analyse"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}

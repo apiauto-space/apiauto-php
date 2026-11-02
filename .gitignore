@@ -1,0 +1,18 @@
+# Dependencies and caches
+/vendor/
+/composer.lock
+/.phpunit.cache/
+/.phpunit.result.cache
+/.phpstan/
+
+# Environments
+.env
+.env.*
+.envrc
+*.db-journal
+
+# Editors and OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
